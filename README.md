@@ -1,1 +1,1 @@
-This is a common template.
+This is a landing example.

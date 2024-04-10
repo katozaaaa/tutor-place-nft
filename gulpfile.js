@@ -68,7 +68,7 @@ function pages() {
 
 function copyFonts() {
 
-  return src('app/assets/fonts/**/*.*')
+  return src('app/assets/fonts/**/*.*', {encoding: false})
     .pipe(dest('public/assets/fonts/'))
 }
 

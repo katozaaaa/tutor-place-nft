@@ -1,0 +1,63 @@
+@use '../../styles/variables';
+
+.section-advantages {
+  background-color: variables.$color--background--light-primary;
+
+  &__title {
+    text-align: center;
+    color: variables.$color--text--light-primary;
+  }
+
+  &__container {
+    margin: 195px 0;
+    padding: 130px 315px 145px 315px;
+    border-radius: 20px;
+    background-color: variables.$color--background--dark-primary;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(310px, auto));
+    gap: 75px 45px;
+    margin-top: 65px;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 20px;
+    border-radius: 20px;
+    background-color: #333E51B2;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -18px;
+      height: 18px;
+      width: 260px;
+      border-radius: 0 0 20px 20px;
+      background-color: #333E5199;
+    }
+  }
+
+  &__image {
+    width: 117px;
+    height: 117px;
+  }
+
+  &__text {
+    margin-top: 22px;
+    font-family: variables.$font--primary;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: variables.$color--text--light-primary;
+  }
+}

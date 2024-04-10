@@ -1,0 +1,19 @@
+@use '../../styles/variables';
+
+.nav {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 105px;
+  }
+
+  &__ref {
+    font-family: variables.$font--primary;
+    font-size: 23px;
+    font-weight: 400;
+    color: variables.$color--text--light-secondary;
+    text-decoration: none;
+  }
+}

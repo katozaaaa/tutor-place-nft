@@ -1,0 +1,50 @@
+@use '../../styles/variables';
+
+.button {
+  cursor: pointer;
+
+  &_style {
+
+    &_filled {
+      border: none;
+      font-family: variables.$font--secondary;
+      font-weight: 500;
+      color: variables.$color--text--dark-primary;
+      background-image: linear-gradient(30deg, #1DD844, #CBF62E);
+      box-shadow: 0 0 15px 0 #1dd845;
+      
+      &:hover {
+        border-color: #C3F33B;
+        color: #C3F33B;
+      }
+    }
+
+    &_linear {
+      border: 1px solid #FFFFFF;
+      font-family: variables.$font--primary;
+      font-weight: 500;
+      color: variables.$color--text--light-primary;
+      background-color: transparent;
+      
+      &:hover {
+        border-color: #C3F33B;
+        color: #C3F33B;
+      }
+    }
+  }
+
+  &_size {
+
+    &_s {
+      padding: 16px 22px;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+
+    &_m {
+      padding: 22px 30px;
+      border-radius: 20px;
+      font-size: 20px;
+    }
+  }
+}

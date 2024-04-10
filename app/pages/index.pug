@@ -3,15 +3,84 @@ extends templates/default.pug
 block titleText
   | Шаблон
 
-//- block fonts 
+block fonts 
+  link(rel="preconnect" href="https://fonts.googleapis.com")
+  link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+  link(href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet")
 
 //- block styles
 
 //- block scripts
 
 block headerContent
+  .container.header__container
+    a.logo.header__logo(href="/")
+      img.logo__icon(src="assets/icons/logo-icon.svg")
+
+      svg.logo__text-icon(width="73" height="29" viewBox="0 0 73 29" fill="none" xmlns="http://www.w3.org/2000/svg")
+        path(d="M23.5782 0V29H20.0937L3.89098 6.23047H3.60061V29H0V0H3.48446L19.7453 22.8262H20.0356V0H23.5782Z" fill="white")
+        path(d="M29.5565 29V0H47.3853V3.11523H33.1571V12.9141H46.0496V16.0293H33.1571V29H29.5565Z" fill="white")
+        path(d="M50.6995 3.11523V0H73V3.11523H63.65V29H60.0494V3.11523H50.6995Z" fill="white")
+
+    nav.nav.header__nav
+      ul.nav__list
+        li.nav__item
+          a.nav__ref(href="/") Главная
+
+        li.nav__item
+          a.nav__ref(href="/") Что даст обучение
+
+    button.button.button_style_linear.button_size_s.button_action_login Личный кабинет
+
 
 block mainContent
+  section.section.section-hero 
+    .container.section-hero__container 
+      .section-hero__title-wrapper
+        h1.title.section-hero__title.title_type_h1
+          | Не упусти 
+          br 
+          | возможность войти
+          br
+          | в 
+          span прибыльную нишу
+
+      .section-hero__text-wrapper
+        .section-hero__text 
+          | Получи все нужные навыки для заработка 
+          br
+          | на NFT всего за 28 дней!
+
+      .section-hero__button-wrapper
+        button.button.section-hero__button.button_style_filled.button_size_m.button_action_order Начать зарабатывать на NFT
+
+      .section-hero__media-wrapper
+        img.section-hero__front-image(src="assets/images/hero-man.png")
+
+  section.section.section-advantages
+    .container.section-advantages__container
+      h2.title.section-advantages__title.title_type_h2 Что даст тебе обучение?
+      
+      ul.section-advantages__list
+        li.section-advantages__item
+          img.section-advantages__image(src="assets/images/advantages-1.png")
+
+          .section-advantages__text Откроешь свой первый криптокошелек и научишься с ним работать
+
+        li.section-advantages__item
+          img.section-advantages__image(src="assets/images/advantages-2.png")
+
+          .section-advantages__text Поймёшь, как выбирать правильные дропы
+
+        li.section-advantages__item
+          img.section-advantages__image(src="assets/images/advantages-3.png")
+
+          .section-advantages__text Построишь план по быстрому приумножению заработанных средств
+
+        li.section-advantages__item
+          img.section-advantages__image(src="assets/images/advantages-4.png")
+
+          .section-advantages__text Узнаешь кто такие холдеры и флипперы
 
 block footerContent 
 

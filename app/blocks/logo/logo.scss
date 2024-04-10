@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+
+  &__text-icon {
+    margin-left: 13px;
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 31px 0;
+
+  &__container {
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+}

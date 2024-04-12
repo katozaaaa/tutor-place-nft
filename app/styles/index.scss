@@ -1,10 +1,13 @@
 @use './mixins' as *;
 
-@use '../blocks/logo/logo';
 @use '../blocks/button/button';
+@use '../blocks/input/input';
+@use '../blocks/close/close';
 @use '../blocks/nav/nav';
 @use '../blocks/title/title';
 @use '../blocks/burger/burger';
+@use '../blocks/glow/glow';
+@use '../blocks/logo/logo';
 
 @use '../blocks/modal/modal';
 @use '../blocks/modal-menu/modal-menu';

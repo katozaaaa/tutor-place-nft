@@ -1,0 +1,56 @@
+.input {
+  display: flex;
+  color: #757575;
+  border: none;
+  box-sizing: border-box;
+
+  &_size {
+
+    &_s {
+      padding: 15px 22px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    &_m {
+      padding: 16px 22px;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+
+    &_l {
+      padding: 22px 30px;
+      border-radius: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  @media (max-width: 1200px) {
+    
+    &_size {
+
+      &_s {
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        font-size: 16px;
+      }
+
+      &_m {
+        padding: 1.2vw 2vw;
+        border-radius: 1.2vw;
+        font-size: 16px;
+      }
+
+      &_l {
+        padding: 2vw 2.4vw;
+        border-radius: 1.5vw;
+        font-size: 18px;
+      }
+    } 
+  }
+}

@@ -9,11 +9,27 @@
     gap: 105px;
   }
 
-  &__ref {
+  &__link {
     font-family: variables.$font--primary;
     font-size: 23px;
     font-weight: 400;
     color: variables.$color--text--light-secondary;
     text-decoration: none;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: #C3F33B;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    &__list {
+      gap: 5vw;
+    }
+  
+    &__link {
+      font-size: 18px;
+    }
   }
 }

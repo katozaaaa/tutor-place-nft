@@ -1,6 +1,9 @@
 @use '../../styles/variables';
 
 .button {
+  display: flex;
+  justify-content: center;
+  width: max-content;
   cursor: pointer;
 
   &_style {
@@ -12,10 +15,14 @@
       color: variables.$color--text--dark-primary;
       background-image: linear-gradient(30deg, #1DD844, #CBF62E);
       box-shadow: 0 0 15px 0 #1dd845;
+      transition: all 0.2s ease-out;
       
+      &:focus {
+        border: none;
+      }
+
       &:hover {
-        border-color: #C3F33B;
-        color: #C3F33B;
+        box-shadow: 0 0 25px 0 #1dd845;
       }
     }
 
@@ -25,7 +32,12 @@
       font-weight: 500;
       color: variables.$color--text--light-primary;
       background-color: transparent;
+      transition: all 0.2s ease-out;
       
+      &:focus {
+        border-color: #FFFFFF;
+      }
+
       &:hover {
         border-color: #C3F33B;
         color: #C3F33B;
@@ -36,15 +48,60 @@
   &_size {
 
     &_s {
+      padding: 15px 22px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    &_m {
       padding: 16px 22px;
       border-radius: 15px;
       font-size: 16px;
     }
 
-    &_m {
+    &_l {
       padding: 22px 30px;
       border-radius: 20px;
       font-size: 20px;
     }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 1200px) {
+
+    &_style {
+
+      &_filled {
+        box-shadow: 0 0 1vw 0 #1dd845;
+
+        &:hover {
+          box-shadow: 0 0 2vw 0 #1dd845;
+        }
+      }
+    }
+
+    &_size {
+
+      &_s {
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        font-size: 16px;
+      }
+
+      &_m {
+        padding: 1.2vw 2vw;
+        border-radius: 1.2vw;
+        font-size: 16px;
+      }
+
+      &_l {
+        padding: 2vw 2.4vw;
+        border-radius: 1.5vw;
+        font-size: 18px;
+      }
+    } 
   }
 }

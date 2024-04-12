@@ -1,0 +1,9 @@
+.modal {
+  position: fixed;
+  overflow: hidden;
+
+  &::backdrop {
+    backdrop-filter: blur(6px);
+    background-color: #3009614D;
+  }
+}

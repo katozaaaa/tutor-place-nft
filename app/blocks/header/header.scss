@@ -1,15 +1,27 @@
 .header {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: center;
-  padding: 31px 0;
 
   &__container {
     flex-direction: row;
     align-items: center;
     gap: 150px;
+    padding: 31px 0;
   }
 
   &__logo {
     margin-right: auto;
+  }
+
+  @media (max-width: 1200px) {
+
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 5vw;
+      padding: 3vw;
+    }
   }
 }

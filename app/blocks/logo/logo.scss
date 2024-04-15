@@ -37,6 +37,10 @@
     }
   }
 
+  &:focus {
+    outline: none;
+  }
+
   @media (max-width: 1200px) {
     &__glow {
       width: 4vw;
@@ -47,6 +51,18 @@
       width: 7vw;
       height: auto;
       margin-left: 1vw;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__glow {
+      width: 8vw;
+      height: 8vw;
+    }
+  
+    &__text-icon {
+      width: 15vw;
+      margin-left: 2.5vw;
     }
   }
 }

@@ -233,4 +233,83 @@
       filter: blur(1vw);
     }
   }
+
+  @media (max-width: 767px) {
+    &__container {
+      margin: 22vw 0;
+      padding: 12vw 9vw 40vw 9vw;
+      border-radius: 6vw;
+    }
+
+    &__list {
+      grid-template-columns: 100%;
+      row-gap: 16vw;
+      margin-top: 9vw;
+    }
+
+    &__item {
+      padding: 15vw 6vw;
+      border-radius: 6vw;
+  
+      &:after {
+        bottom: -5vw;
+        height: 5vw;
+        width: 70vw;
+        border-radius: 0 0 7vw 7vw;
+      }
+    }
+  
+    &__image-wrapper {
+      width: 26vw;
+      height: 26vw;
+  
+      &:after {
+        width: 26vw;
+        height: 26vw;
+        filter: blur(4vw);
+      }
+    }
+  
+    &__text {
+      margin-top: 7vw;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: -0.7px;
+    }
+  
+    &__glow-1 {
+      top: -16vw;
+      right: -8vw;
+      left: auto;
+      width: 60vw;
+      height: 60vw;
+      filter: blur(20vw);
+    }
+  
+    &__glow-2 {
+      display: none;
+    }
+  
+    &__glow-3 {
+      top: -16vw;
+      right: -8vw;
+      width: 26vw;
+      height: 26vw;
+    }
+  
+    &__glow-4 {
+      top: 32vw;
+      left: 6vw;
+      width: 7vw;
+      height: 7vw;
+    }
+  
+    &__glow-5 {
+      bottom: 6vw;
+      right: 3vw;
+      width: 20vw;
+      height: 20vw;
+      filter: blur(2vw);
+    }
+  }
 }

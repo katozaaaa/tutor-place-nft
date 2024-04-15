@@ -87,4 +87,41 @@
       filter: blur(5vw);
     }
   }
+
+  @media (max-width: 767px) {
+    width: 100vw;
+    border-radius: 6vw;
+    padding: 15vw 5vw 12vw 5vw;
+    top: 41%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    &__text {
+      margin-top: 6vw;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__form {
+      margin-top: 8vw;
+    }
+
+    &__button {
+      margin-top: 6vw;
+    }
+
+    &__close {
+      top: 8.5vw;
+      right: 7.5vw;
+    }
+
+    &__glow {
+      top: auto;
+      bottom: -8vw;
+      right: -8vw;
+      width: 70vw;
+      height: 70vw;
+      filter: blur(15vw);
+    }
+  }
 }

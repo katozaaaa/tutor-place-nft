@@ -15,6 +15,10 @@
     margin-right: auto;
   }
 
+  &__burger {
+    display: none;
+  }
+
   @media (max-width: 1200px) {
 
     &__container {
@@ -22,6 +26,28 @@
       align-items: center;
       gap: 5vw;
       padding: 3vw;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+      padding: 8vw 5vw 8vw 6.5vw;
+    }
+
+    &__nav {
+      display: none;
+    }
+    
+    &__login-button {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
     }
   }
 }

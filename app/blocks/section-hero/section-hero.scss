@@ -201,4 +201,110 @@
       display: none;
     }
   }
+
+  @media (max-width: 767px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding: 8vw 7vw 16vw 7vw;
+    }
+  
+    &__content-wrapper {
+      display: contents;
+    }
+  
+    &__title {
+      margin-top: 0;
+      order: 1;
+      text-align: center;
+    }
+  
+    &__text {
+      width: 70vw;
+      margin-top: 16vw;
+      font-size: 18px;
+      line-height: 21px;
+      order: 3;
+      text-align: center;
+    }
+  
+    &__button {
+      width: 100%;
+      margin-top: 12.5vw;
+      order: 4;
+    }
+  
+    &__media-wrapper {
+      margin-top: 11vw;
+      order: 2;
+    }
+  
+    &__front-image {
+      top: 0;
+      left: 2vw;
+      width: 65vw;
+      z-index: 1;
+    }
+  
+    &__right-hand-item {
+      top: 29.5vw;
+      right: -9vw;
+      width: 25vw;
+    }
+  
+    &__background-item-1 {
+      top: 15vw;
+      left: 8vw;
+      width: 17vw;
+    }
+  
+    &__background-item-2 {
+      top: 2.5vw;
+      left: 13.5vw;
+      width: 6.5vw;
+    }
+  
+    &__background-item-3 {
+      top: 1.5vw;
+      right: 5.5vw;
+      width: 6.5vw;
+    }
+  
+    &__background-item-4 {
+      top: 52vw;
+      left: -6.5vw;
+      width: 4.5vw;
+    }
+  
+    &__glow-man {
+      top: 17vw;
+      left: 5vw;
+      width: 58vw;
+      height: 58vw;
+      filter: blur(10vw);
+    }
+  
+    &__glow-top {
+      top: -45vw;
+      left: -20vw;
+      width: 70vw;
+      height: 70vw;
+      filter: blur(20vw);
+    }
+  
+    &__glow-middle {
+      top: 60px;
+      left: -255px;
+      width: 88px;
+      height: 88px;
+      border: 1px solid transparent;
+      background: radial-gradient(95.38% 95.38% at 50.77% 4.62%, #DDF92C 0%, #8FEC36 44.51%, #00D448 100%), 
+      radial-gradient(91.49% 91.49% at 51.06% 8.51%, rgba(226, 193, 255, 0.53) 0%, rgba(133, 61, 242, 0.55) 100%);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      transform: rotate(-25deg);
+      filter: blur(2px);
+    }
+  }
 }

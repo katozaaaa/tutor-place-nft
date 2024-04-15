@@ -40,7 +40,11 @@
 
       &:hover {
         border-color: #C3F33B;
-        color: #C3F33B;
+        color: #C3F33B; 
+      }
+
+      &:active {
+        background-color: #E0FFAC0D;
       }
     }
   }
@@ -101,6 +105,41 @@
         padding: 2vw 2.4vw;
         border-radius: 1.5vw;
         font-size: 18px;
+      }
+    } 
+  }
+
+  @media (max-width: 767px) {
+
+    &_style {
+
+      &_filled {
+        box-shadow: 0 0 4vw 0 #1dd845;
+
+        &:hover {
+          box-shadow: 0 0 6vw 0 #1dd845;
+        }
+      }
+    }
+
+    &_size {
+
+      &_s {
+        padding: 5vw 6vw;
+        border-radius: 3vw;
+        font-size: 16px;
+      }
+
+      &_m {
+        padding: 5vw 6vw;
+        border-radius: 5vw;
+        font-size: 16px;
+      }
+
+      &_l {
+        padding: 5vw 6vw;
+        border-radius: 5vw;
+        font-size: 16px;
       }
     } 
   }

@@ -30,14 +30,26 @@
       &_h1 {
         font-size: 50px;
         line-height: 50px;
-
-        span {
-          font-weight: 700;
-        }
       }
 
       &_h2 {
         font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    &_type {
+    
+      &_h1 {
+        font-size: 25px;
+        line-height: 26px;
+      }
+
+      &_h2 {
+        font-size: 23px;
         line-height: 30px;
       }
     }

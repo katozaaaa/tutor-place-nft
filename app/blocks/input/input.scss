@@ -53,4 +53,28 @@
       }
     } 
   }
+
+  @media (max-width: 767px) {
+    
+    &_size {
+
+      &_s {
+        padding: 5vw 6vw;
+        border-radius: 3vw;
+        font-size: 16px;
+      }
+
+      &_m {
+        padding: 5vw 6vw;
+        border-radius: 5vw;
+        font-size: 16px;
+      }
+
+      &_l {
+        padding: 5vw 6vw;
+        border-radius: 5vw;
+        font-size: 16px;
+      }
+    } 
+  }
 }

@@ -14,6 +14,8 @@ const gcmq = require('gulp-group-css-media-queries');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 
+const ghPages = require('gulp-gh-pages');
+
 function browsersync() {
 
   browserSync.init({
@@ -121,12 +123,18 @@ function watching() {
 	);
 }
 
+function deploy() {
+  return src(`./public/**/*`)
+    .pipe(ghPages({ branch: "build" }))
+};
+
 exports.clean = clean;
 exports.scripts = scripts;
 exports.styles = styles;
 exports.pages = pages;
 exports.copyResources = copyResources;
 exports.browsersync = browsersync;
+exports.deploy = deploy;
 
 exports.default = parallel(
 	clean,
@@ -137,3 +145,20 @@ exports.default = parallel(
 	browsersync, 
 	watching,
 );
+
+exports.build = series(
+  clean,
+	scripts,
+  styles,
+	pages,
+  copyResources,
+)
+
+exports.deploy = series(
+  clean,
+	scripts,
+  styles,
+	pages,
+  copyResources,
+  deploy,
+)
